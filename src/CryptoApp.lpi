@@ -55,7 +55,9 @@
       <Unit2>
         <Filename Value="TextForm.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmText"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <UnitName Value="TextForm"/>
       </Unit2>
       <Unit3>
