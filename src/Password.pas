@@ -1,8 +1,10 @@
 unit Password;
 
+{$MODE Delphi}
+
 interface
 
-uses Windows, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls, 
+uses LCLIntf, LCLType, LMessages, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls,
   Buttons;
 
 type
@@ -22,7 +24,7 @@ var
 
 implementation
 
-{$R *.dfm}
+{$R *.lfm}
 
 end.
  

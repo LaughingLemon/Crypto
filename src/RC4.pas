@@ -1,5 +1,7 @@
 unit RC4;
 
+{$MODE Delphi}
+
 interface
 
 uses

@@ -1,8 +1,10 @@
 program CryptoApp;
 
+{$MODE Delphi}
+
 uses
   Forms,
-  Controls,
+  Controls, Interfaces,
   SysUtils,
   Main in 'Main.pas' {frmMain},
   TextForm in 'TextForm.pas' {frmText},

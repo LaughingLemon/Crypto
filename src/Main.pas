@@ -1,9 +1,11 @@
 unit Main;
 
+{$MODE Delphi}
+
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  LCLIntf, LCLType, LMessages, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ImgList, ToolWin, ComCtrls, ActnList, StdActns;
 
 type
@@ -39,7 +41,7 @@ implementation
 uses
   TextForm, Crypto, Password;
 
-{$R *.dfm}
+{$R *.lfm}
 
 procedure TfrmMain.actTextFormExecute(Sender: TObject);
 begin

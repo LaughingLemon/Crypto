@@ -1,9 +1,11 @@
 unit Crypto;
 
+{$MODE Delphi}
+
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils, FileUtil;
 
 type
   ECryptException = class(Exception)
@@ -215,7 +217,7 @@ procedure TCryptUtil.CheckFile(const FileName: string);
 begin
   if (Trim(FileName) = '') then
     raise ECryptException.Create('File name is blank');
-  if not FileExists(FileName) then
+  if not FileExistsUTF8(FileName) { *Converted from FileExists*  } then
     raise ECryptException.Create('File does not exist');
 end;
 

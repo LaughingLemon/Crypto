@@ -1,9 +1,11 @@
 unit TextForm;
 
+{$MODE Delphi}
+
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  LCLIntf, LCLType, LMessages, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ComCtrls, StdActns, ActnList, ToolWin, ImgList, StdCtrls,
   ExtCtrls;
 
@@ -45,7 +47,7 @@ implementation
 uses
   Crypto;
 
-{$R *.dfm}
+{$R *.lfm}
 
 procedure TfrmText.actEncryptTextUpdate(Sender: TObject);
 begin
